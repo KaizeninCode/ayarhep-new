@@ -3,8 +3,8 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div>
-      <p>COMING SOON!</p>
+    <div className='news'>
+      <p>This part of the AYARHEP experience is <br/><em>STILL UNDER CONSTRUCTION.</em><br/>We appreciate your patience.</p>
     </div>
   )
 }
