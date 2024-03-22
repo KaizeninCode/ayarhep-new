@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './NavBar.css'
 
 const NavBar = () => {
     const navlinkStyles = {
@@ -13,11 +14,15 @@ const NavBar = () => {
     }
   return (
     <div className='header'>
-      <h1>AYARHEP</h1>
-      <NavLink exact to='/' style={navlinkStyles}>Home</NavLink>  
-      <NavLink to='/about' style={navlinkStyles}>What We Do</NavLink>
+      <div className="logo">
+        <div className="logo-img"></div>
+        <NavLink exact to='/'><h1>AYARHEP</h1></NavLink>  
+      </div>
       <NavLink to='/focus-area' style={navlinkStyles}>Focus Area</NavLink>
-      <NavLink to='/news' style={navlinkStyles}>News</NavLink>
+      <NavLink to='/resources' style={navlinkStyles}>Resources</NavLink>
+      {/* <NavLink to='/news' style={navlinkStyles}>News</NavLink> */}
+      <NavLink to='/activities' style={navlinkStyles}>Activities</NavLink>
+      <NavLink to='/interventions' style={navlinkStyles}>Interventions</NavLink>
     </div>
   )
 }

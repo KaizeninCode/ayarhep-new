@@ -17,18 +17,30 @@ function App() {
     <Router>
       <div className="App">
         <NavBar/>
+        <section>
+          <Home/>
+        </section>
+        <section>
+          <About/>
+        </section>
+        <section>
+          <News/>
+        </section>
+        <section>
+          <FooterHelp/>
+        </section>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          {/* <Route path='/' element={<Home/>}/> */}
           <Route path='/about' element={<About/>}/>
           <Route path='/focus-area' element={<FocusArea/>}/>
-          <Route path='/news' element={<News/>}/>
+          {/* <Route path='/news' element={<News/>}/> */}
           <Route path='/footer-about' element={<FooterAbout/>}/>
           <Route path='/faq' element={<FooterFAQ/>}/>
           <Route path='/privacy' element={<FooterPrivacy/>}/>
-          <Route path='/help' element={<FooterHelp/>}/>
+          {/* <Route path='/help' element={<FooterHelp/>}/> */}
           <Route path='/tc' element={<FooterTC/>}/>
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </Router>
   );

@@ -31,10 +31,10 @@ body::-webkit-scrollbar{
   left: 0;
 }
 
-.header a:hover{
+/* .header a:hover{
   background-color: ivory;
   color: #010101 !important;
-}
+} */
 
 .header h1 {
   margin-right: auto;
@@ -294,4 +294,11 @@ textarea:focus, input:focus {
 .footer-tc ol li, .footer-privacy ol li {
   line-height: 1.5;
   margin-bottom: 1rem;
+}
+
+section {
+  max-width: 1400px;
+  height: calc(100% - 80px);
+  /* padding: 0 1rem; */
+  /* overflow-y: scroll; */
 }
